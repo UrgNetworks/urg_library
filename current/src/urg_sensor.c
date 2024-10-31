@@ -1347,7 +1347,7 @@ static const char *receive_command_response(urg_t *urg,
 }
 
 
-static const int receive_II_command_response(urg_t *urg,
+static int receive_II_command_response(urg_t *urg,
                                             char *buffer, int buffer_size)
 {
     const int vv_expected[] = { 0, EXPECTED_END };
